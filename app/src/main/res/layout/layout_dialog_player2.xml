@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="16dp">
+<EditText
+    android:id="@+id/etplayer1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:hint="Enter Player 1 Name"/>
+    <EditText
+        android:id="@+id/etplayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player 2 Name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/etplayer1"/>
+    <RelativeLayout
+        android:id="@+id/llBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etplayer2">
+
+        <Button
+
+            android:layout_margin="5dp"
+            android:id="@+id/btnBackDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:background="@drawable/roundbutton"
+            android:textColor="#fff"
+            android:layout_alignParentStart="true"
+            android:text="Back"/>
+        <Button
+            android:id="@+id/btnPlayDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Play"
+            android:background="@drawable/roundbutton"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
